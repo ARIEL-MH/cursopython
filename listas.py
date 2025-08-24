@@ -60,3 +60,56 @@ courses_copy = courses[::-1]  # invertir la lista
 
 print(new_list)
 print(courses_copy)
+
+
+# METODOS EN LISTAS
+
+# Añador nuevos elementos en tiempo de ejecucioón
+
+courses.append("C++")  # agrega un elemento al final de la lista
+courses.append("PHP")
+courses.append("Laravel")
+
+courses.insert(0, "Java")
+courses.insert(4, "C#")
+courses.insert(2, "MySQL")
+
+# extender la lista atraves de otra lista
+new_courses = ["React", "Nest"]
+courses.extend(new_courses)
+
+# BUSCAR SI UN VALOR SE ENCUENTRA EN EL LISTADO
+
+found = "Python" in courses
+found = courses.index("Flask")  # devuelve el indice del elemento
+
+print(found)
+
+# ELIMINAR ELEMENTOS DEL LISTADO
+
+courses.remove("Ruby")
+last_element = courses.pop()  # elimina el ultimo elemento
+first_element = courses.pop(0)  # elimina el primer elemento y devulve el valor
+
+print(last_element)
+print(first_element)
+
+# courses.clear()  # limpia la lista
+
+print(courses)
+print(len(courses))
+
+
+# copy copiar litas
+copia_lista = courses[:]
+copia_lista = courses.copy()
+
+print(copia_lista)
+# reverse revirtir las lista
+
+# reverse_list = courses[::-1]
+courses.reverse()
+
+# sort ordenarlos
+courses.sort(reverse=True)  # ordena alfabeticamente modifica la lista
+print(courses)
