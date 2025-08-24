@@ -113,3 +113,19 @@ courses.reverse()
 # sort ordenarlos
 courses.sort(reverse=True)  # ordena alfabeticamente modifica la lista
 print(courses)
+
+# MATRIZ
+# Las listas no son mas que colecciones que no permite almacenar defierente tipos de datos
+# se puede trabajar con n dimenciones
+# 3x3
+matrix = [
+    [1, 2, 3],  # indice 0
+    [4, 5, 6],  # indice 1
+    [7, 8, 9]   # indice 2
+]
+
+print(matrix)
+
+print(
+    matrix[1][1]
+)
