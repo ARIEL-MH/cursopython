@@ -89,3 +89,29 @@ print(response)
 print(type(response))
 
 # unir defirentes valores de diferentes colecciones
+
+numbers = (
+    1, 4, 5, 3, 3, 7, 2, 10
+)
+
+print(
+    len(numbers),  # permite conocer candidad de elementos de una coleccion
+    # recive un colección retorna una lista ordenada de forma descendente y genera una nueva colección
+    sorted(numbers, reverse=True),
+)
+
+print(
+    # permite conocer cuantas veces se repite un elemento en una colección
+    numbers.count(3),
+)
+
+print(
+    3 in numbers  # Da Verdadero o Falso
+)
+
+print(
+    # retorna el indice del elemento que le pasemos como parametro
+    numbers.index(7)
+)
+
+print(numbers)
