@@ -74,3 +74,18 @@ print(
     # sub_courses,
     last_value
 )
+
+# ZIP la funcion zip no permite trabajar con diferentes colecciones
+# y apartir de ellas generemos tuplas
+
+users = ["user1", "user2", "user3"]
+courses = ("Python", "Django", "Rails")
+scores = [10, 8, 7]
+# unimos las coleciones usando sus indices
+response = list(zip(users, courses, scores))
+response = tuple(zip(users, courses, scores))
+
+print(response)
+print(type(response))
+
+# unir defirentes valores de diferentes colecciones
