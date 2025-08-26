@@ -216,5 +216,3 @@ else:
         print(f'Lo siento, has perdido. El número era: {random_number}')
     else:
         print(f'Felicidades, encontrastes el número. {random_number}')
-
-# ** Break && Continue
