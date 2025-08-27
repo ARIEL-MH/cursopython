@@ -33,8 +33,7 @@ class Organizer(User):
 
 
 admin = Admin('Admin1', 'adminpassword', 'admin1@example.com')
-organizer = Organizer(
-    'Organizer1', 'organizerpassword')
+organizer = Organizer('Organizer1', 'organizerpassword')
 
 print(organizer.username)
 
